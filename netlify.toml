@@ -1,0 +1,16 @@
+[build]
+  command = "npm install && npm run build"
+  publish = "_site"
+
+# Redirect /blog posts to clean URLs (already handled by 11ty, kept for safety)
+[[redirects]]
+  from = "/blog"
+  to   = "/blog/"
+  status = 301
+
+# Security headers for /admin
+[[headers]]
+  for = "/admin/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-XSS-Protection = "1; mode=block"

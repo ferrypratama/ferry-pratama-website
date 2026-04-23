@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Courses — Ferry Pratama</title>
+  <meta name="description" content="Video course networking dan CCNA dari Ferry Pratama — segera hadir. Daftarkan email untuk dapat notifikasi pertama.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,800;1,9..144,400&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;700&family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">Ferry<em>.</em></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Buka menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="about.html">About</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="mentorship.html">Mentorship</a></li>
+      <li><a href="courses.html">Courses</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="mentorship.html" class="nav-cta">Book Session</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- COMING SOON -->
+<section class="coming-soon">
+  <div class="wrap">
+    <div class="coming-soon-inner">
+      <div class="coming-label">Segera Hadir</div>
+      <h1 class="hero-title" style="font-size: clamp(44px, 6vw, 80px); max-width: 720px;">
+        CCNA Santai. Serius, tapi <em>gak bikin stress</em>.
+      </h1>
+      <p style="font-family: 'Instrument Serif', serif; font-size: 20px; font-style: italic; color: var(--muted); max-width: 520px; line-height: 1.55; margin: 24px 0 40px;">Video course CCNA yang bisa kamu pelajari sendiri, kapan saja. Materi yang sama yang saya ajarkan di kelas — direkam, diedit, dan dikemas buat belajar mandiri.</p>
+
+      <!-- What to expect -->
+      <div style="border: 1px solid var(--ink); max-width: 560px; margin-bottom: 44px;">
+        <div style="padding: 14px 20px; background: var(--ink); color: var(--paper);">
+          <span style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase;">Yang sedang disiapkan</span>
+        </div>
+        <div style="display: flex; flex-direction: column;">
+          <div style="padding: 16px 20px; border-bottom: 1px solid var(--ink); display: flex; gap: 16px; align-items: flex-start;">
+            <span style="font-family: 'JetBrains Mono', monospace; font-size: 10px; color: var(--accent-1); letter-spacing: 0.1em; text-transform: uppercase; min-width: 60px; padding-top: 2px;">Module 1</span>
+            <span style="font-size: 14px;">Dasar-dasar jaringan &amp; model OSI — tanpa skip bagian yang sering bingung</span>
+          </div>
+          <div style="padding: 16px 20px; border-bottom: 1px solid var(--ink); display: flex; gap: 16px; align-items: flex-start;">
+            <span style="font-family: 'JetBrains Mono', monospace; font-size: 10px; color: var(--accent-1); letter-spacing: 0.1em; text-transform: uppercase; min-width: 60px; padding-top: 2px;">Module 2</span>
+            <span style="font-size: 14px;">IP Addressing &amp; Subnetting — dari bingung sampai bisa ngitung di kepala</span>
+          </div>
+          <div style="padding: 16px 20px; border-bottom: 1px solid var(--ink); display: flex; gap: 16px; align-items: flex-start;">
+            <span style="font-family: 'JetBrains Mono', monospace; font-size: 10px; color: var(--accent-1); letter-spacing: 0.1em; text-transform: uppercase; min-width: 60px; padding-top: 2px;">Module 3</span>
+            <span style="font-size: 14px;">Switching &amp; VLAN — konfigurasi nyata di Packet Tracer</span>
+          </div>
+          <div style="padding: 16px 20px; border-bottom: 1px solid var(--ink); display: flex; gap: 16px; align-items: flex-start;">
+            <span style="font-family: 'JetBrains Mono', monospace; font-size: 10px; color: var(--accent-1); letter-spacing: 0.1em; text-transform: uppercase; min-width: 60px; padding-top: 2px;">Module 4</span>
+            <span style="font-size: 14px;">Routing — static, OSPF, dan kapan harus pakai yang mana</span>
+          </div>
+          <div style="padding: 16px 20px; display: flex; gap: 16px; align-items: flex-start;">
+            <span style="font-family: 'JetBrains Mono', monospace; font-size: 10px; color: var(--muted); letter-spacing: 0.1em; text-transform: uppercase; min-width: 60px; padding-top: 2px;">+More</span>
+            <span style="font-size: 14px; color: var(--muted);">NAT, ACL, Wireless, Security basics, dan simulasi ujian</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Email capture -->
+      <div style="max-width: 480px;">
+        <div class="eyebrow" style="margin-bottom: 12px;">Dapat notifikasi pertama</div>
+        <p style="font-size: 14px; color: var(--muted); margin-bottom: 20px;">Daftarkan email kamu. Saya akan kirim update progress dan kasih tau ketika pre-launch dimulai — dengan harga spesial untuk yang daftar duluan.</p>
+        <form style="display: flex; gap: 0; border: 1px solid var(--ink);" name="waitlist" method="POST" action="#" data-netlify="true">
+          <input
+            type="email"
+            name="email"
+            placeholder="email@kamu.com"
+            required
+            style="font-family: 'Nunito', sans-serif; font-size: 14px; font-weight: 500; color: var(--ink); background: var(--paper); border: none; padding: 13px 16px; outline: none; flex: 1; min-width: 0;"
+          >
+          <button type="submit" class="btn btn-primary" style="border: none; border-left: 1px solid var(--ink); white-space: nowrap; flex-shrink: 0;">
+            Daftar Waitlist
+          </button>
+        </form>
+        <p style="font-size: 12px; color: var(--muted); margin-top: 10px; font-family: 'JetBrains Mono', monospace; letter-spacing: 0.05em;">Tidak ada spam. Unsubscribe kapan saja.</p>
+      </div>
+
+      <!-- Or go to mentorship -->
+      <div style="margin-top: 56px; padding-top: 40px; border-top: 1px solid var(--ink); max-width: 560px;">
+        <div class="eyebrow" style="margin-bottom: 10px;">Mau mulai sekarang?</div>
+        <p style="font-size: 15px; color: var(--muted); margin-bottom: 20px;">Kalau kamu tidak mau nunggu course selesai, program mentorship private sudah tersedia dan bisa dimulai minggu ini.</p>
+        <a href="mentorship.html" class="btn btn-outline">Lihat Program Mentorship →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div>
+        <div class="footer-logo">Ferry<em>.</em></div>
+        <p class="footer-tagline">Networking instructor, mentor private, dan penulis teknis. Berbasis di Jakarta, mengajar ke seluruh Indonesia.</p>
+      </div>
+      <div class="footer-nav">
+        <div class="footer-col">
+          <h5>Halaman</h5>
+          <a href="about.html">About</a>
+          <a href="blog.html">Blog</a>
+          <a href="mentorship.html">Mentorship</a>
+          <a href="courses.html">Courses</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h5>Connect</h5>
+          <a href="#">LinkedIn</a>
+          <a href="#">YouTube</a>
+          <a href="#">Instagram</a>
+          <a href="#">GitHub</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Ferry Pratama</span>
+      <span>Jakarta, Indonesia</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog — Ferry Pratama</title>
+  <meta name="description" content="Artikel teknis networking, opini karir IT, dan cerita dari balik meja instruktur. Ditulis oleh Ferry Pratama.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,800;1,9..144,400&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;700&family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">Ferry<em>.</em></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Buka menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="about.html">About</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="mentorship.html">Mentorship</a></li>
+      <li><a href="courses.html">Courses</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="mentorship.html" class="nav-cta">Book Session</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="wrap">
+    <div class="hero-eyebrow">Blog</div>
+    <h1 class="hero-title" style="font-size: clamp(40px, 5.5vw, 68px);">
+      Tulisan tentang networking, karir, <em>dan hal-hal di antaranya.</em>
+    </h1>
+    <p class="hero-sub">Teknis kalau perlu. Santai kalau bisa. Selalu jujur.</p>
+  </div>
+</section>
+
+<!-- BLOG LIST -->
+<section style="border-bottom: none;">
+  <div class="wrap">
+
+    <!-- Filter -->
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 28px; flex-wrap: wrap; gap: 16px;">
+      <div class="filter-wrap" role="group" aria-label="Filter topik">
+        <button class="filter-btn active" data-filter="all">Semua</button>
+        <button class="filter-btn" data-filter="teknis">Teknis</button>
+        <button class="filter-btn" data-filter="karir">Karir</button>
+        <button class="filter-btn" data-filter="opini">Opini</button>
+      </div>
+      <div class="eyebrow">7 tulisan</div>
+    </div>
+
+    <!-- Posts grid -->
+    <div class="posts-grid" id="postsGrid">
+
+      <a href="blog-post.html" class="post-card" data-tag="teknis">
+        <span class="post-tag tag-teknis">Teknis</span>
+        <div class="post-title">Subnetting, <em>tenang aja</em>.</div>
+        <p class="post-excerpt">Subnet mask itu bukan sihir. Panduan paling santai untuk belajar subnetting dari nol, lengkap dengan contoh nyata dari topologi kantor.</p>
+        <div class="post-meta"><span>15 Apr 2026</span><span>8 mnt baca</span></div>
+      </a>
+
+      <a href="blog-post.html" class="post-card" data-tag="karir">
+        <span class="post-tag tag-karir">Karir</span>
+        <div class="post-title">Fresh grad networking: <em>mulai dari mana?</em></div>
+        <p class="post-excerpt">Udah lulus, punya sertifikat CCNA, tapi masih bingung mau ngapain. Roadmap jujur dari orang yang udah jalan duluan.</p>
+        <div class="post-meta"><span>8 Apr 2026</span><span>6 mnt baca</span></div>
+      </a>
+
+      <a href="blog-post.html" class="post-card" data-tag="teknis">
+        <span class="post-tag tag-teknis">Teknis</span>
+        <div class="post-title">OSPF vs EIGRP: <em>mana yang dipakai dunia nyata?</em></div>
+        <p class="post-excerpt">Di lab pake keduanya. Di real network? Jawabannya lebih nuanced dari yang diajarkan di kursus manapun — dan itu yang perlu kamu pahami sebelum wawancara.</p>
+        <div class="post-meta"><span>1 Apr 2026</span><span>10 mnt baca</span></div>
+      </a>
+
+      <a href="blog-post.html" class="post-card" data-tag="opini">
+        <span class="post-tag tag-opini">Opini</span>
+        <div class="post-title">Kenapa saya pilih <em>ngajar</em> daripada jadi engineer?</div>
+        <p class="post-excerpt">Pertanyaan yang sering muncul dari murid. Jawaban jujur tentang kenapa mengajar bisa lebih impactful — dan lebih menantang — dari sekedar coding.</p>
+        <div class="post-meta"><span>22 Mar 2026</span><span>5 mnt baca</span></div>
+      </a>
+
+      <a href="blog-post.html" class="post-card" data-tag="teknis">
+        <span class="post-tag tag-teknis">Teknis</span>
+        <div class="post-title">VLAN itu kayak <em>ruang kelas berbeda</em> di sekolah yang sama.</div>
+        <p class="post-excerpt">Analogiku yang paling sering berhasil. Kalau kamu masih bingung soal VLAN dan broadcast domain, artikel ini untuk kamu.</p>
+        <div class="post-meta"><span>10 Mar 2026</span><span>7 mnt baca</span></div>
+      </a>
+
+      <a href="blog-post.html" class="post-card" data-tag="karir">
+        <span class="post-tag tag-karir">Karir</span>
+        <div class="post-title">Sertifikat CCNA: <em>worth it</em> atau buang-buang waktu?</div>
+        <p class="post-excerpt">Jawaban jujur dari instruktur yang tiap hari ketemu lulusan baru. Tidak ada agenda jual kursus di sini.</p>
+        <div class="post-meta"><span>28 Feb 2026</span><span>6 mnt baca</span></div>
+      </a>
+
+      <a href="blog-post.html" class="post-card" data-tag="opini">
+        <span class="post-tag tag-opini">Opini</span>
+        <div class="post-title">Hal yang gak diajarkan bootcamp tentang <em>dunia kerja IT</em>.</div>
+        <p class="post-excerpt">Setelah melatih ratusan peserta bootcamp, ini yang saya lihat selalu jadi gap antara lulus training dan siap kerja beneran.</p>
+        <div class="post-meta"><span>15 Feb 2026</span><span>8 mnt baca</span></div>
+      </a>
+
+    </div>
+    <!-- end posts-grid -->
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div>
+        <div class="footer-logo">Ferry<em>.</em></div>
+        <p class="footer-tagline">Networking instructor, mentor private, dan penulis teknis. Berbasis di Jakarta, mengajar ke seluruh Indonesia.</p>
+      </div>
+      <div class="footer-nav">
+        <div class="footer-col">
+          <h5>Halaman</h5>
+          <a href="about.html">About</a>
+          <a href="blog.html">Blog</a>
+          <a href="mentorship.html">Mentorship</a>
+          <a href="courses.html">Courses</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h5>Connect</h5>
+          <a href="#">LinkedIn</a>
+          <a href="#">YouTube</a>
+          <a href="#">Instagram</a>
+          <a href="#">GitHub</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Ferry Pratama</span>
+      <span>Jakarta, Indonesia</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

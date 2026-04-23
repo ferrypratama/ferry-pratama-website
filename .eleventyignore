@@ -1,0 +1,9 @@
+_site/
+node_modules/
+index.html
+about.html
+blog.html
+blog-post.html
+mentorship.html
+courses.html
+contact.html

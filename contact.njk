@@ -1,0 +1,114 @@
+---
+layout: base.njk
+title: Contact
+description: Hubungi Ferry Pratama — untuk pertanyaan, kolaborasi, atau sekedar say hi.
+permalink: /contact/
+---
+
+<section class="page-hero">
+  <div class="wrap">
+    <div class="hero-eyebrow">Contact</div>
+    <h1 class="hero-title" style="font-size:clamp(40px,5.5vw,68px);">
+      Ada yang ingin <em>didiskusikan?</em>
+    </h1>
+    <p class="hero-sub">Untuk inquiry mentorship, kolaborasi konten, undangan mengajar, atau sekedar say hi — saya baca semua pesan yang masuk.</p>
+  </div>
+</section>
+
+<section style="border-bottom:none;">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="eyebrow" style="margin-bottom:16px;">Saya aktif di</div>
+        <ul class="social-list">
+          <li>
+            <a href="#" class="social-item">
+              <span class="social-platform">LinkedIn</span>
+              <span class="social-handle">Ferry Pratama</span>
+              <span class="social-arrow">↗</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="social-item">
+              <span class="social-platform">YouTube</span>
+              <span class="social-handle">@ferrypratama</span>
+              <span class="social-arrow">↗</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="social-item">
+              <span class="social-platform">Instagram</span>
+              <span class="social-handle">@ferrypratama.id</span>
+              <span class="social-arrow">↗</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="social-item">
+              <span class="social-platform">GitHub</span>
+              <span class="social-handle">ferrypratama</span>
+              <span class="social-arrow">↗</span>
+            </a>
+          </li>
+        </ul>
+        <div style="margin-top:32px;">
+          <div class="eyebrow" style="margin-bottom:12px;">Response time</div>
+          <div style="border:1px solid var(--ink); padding:20px;">
+            <div style="display:flex; gap:12px; margin-bottom:12px; align-items:flex-start;">
+              <div style="width:8px; height:8px; background:var(--accent-2); border-radius:50%; margin-top:6px; flex-shrink:0;"></div>
+              <div>
+                <div style="font-family:'Fraunces',serif; font-weight:600; font-size:15px; margin-bottom:3px;">Pesan &amp; inquiry</div>
+                <div style="font-size:13px; color:var(--muted);">Saya balas dalam 1×24 jam di hari kerja.</div>
+              </div>
+            </div>
+            <div style="display:flex; gap:12px; align-items:flex-start;">
+              <div style="width:8px; height:8px; background:var(--muted); border-radius:50%; margin-top:6px; flex-shrink:0;"></div>
+              <div>
+                <div style="font-family:'Fraunces',serif; font-weight:600; font-size:15px; margin-bottom:3px;">Weekend &amp; hari libur</div>
+                <div style="font-size:13px; color:var(--muted);">Mungkin lebih lambat — saya juga manusia.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="margin-top:32px;">
+          <div class="eyebrow" style="margin-bottom:12px;">Untuk mentorship</div>
+          <p style="font-size:14px; color:var(--muted); line-height:1.65; margin-bottom:16px;">Kalau tujuanmu adalah program mentorship, lebih baik langsung ke halaman yang lebih spesifik.</p>
+          <a href="/mentorship/" class="btn btn-outline" style="font-size:10px;">Ke halaman Mentorship →</a>
+        </div>
+      </div>
+
+      <div>
+        <div class="eyebrow" style="margin-bottom:20px;">Kirim pesan</div>
+        <form class="form" style="max-width:100%;" name="contact" method="POST" action="#" data-netlify="true">
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="nama">Nama</label>
+              <input class="form-input" type="text" id="nama" name="nama" placeholder="Nama kamu" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="email">Email</label>
+              <input class="form-input" type="email" id="email" name="email" placeholder="email@kamu.com" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="topik">Topik</label>
+            <select class="form-select" id="topik" name="topik" required>
+              <option value="" disabled selected>Pilih topik…</option>
+              <option value="mentorship">Inquiry mentorship</option>
+              <option value="kolaborasi">Kolaborasi konten / mengajar</option>
+              <option value="pertanyaan">Pertanyaan teknis</option>
+              <option value="lainnya">Lainnya</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="pesan">Pesan</label>
+            <textarea class="form-textarea" id="pesan" name="pesan" placeholder="Tulis pesanmu di sini…" required style="min-height:160px;"></textarea>
+          </div>
+          <div>
+            <button type="submit" class="btn btn-primary">Kirim Pesan →</button>
+            <p class="form-note" style="margin-top:12px;">Data kamu tidak akan dibagikan ke pihak manapun.</p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

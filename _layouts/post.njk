@@ -1,0 +1,33 @@
+---
+layout: base.njk
+---
+
+<!-- ARTICLE HEADER -->
+<div class="article-header">
+  <div class="wrap">
+    <div style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin-bottom:24px;">
+      <a href="/blog/" style="color:var(--muted);text-decoration:underline;text-underline-offset:3px;">Blog</a>
+      <span style="margin:0 8px;">→</span>
+      <span>{{ tag | capitalize }}</span>
+    </div>
+    <div class="article-meta">
+      <span class="post-tag tag-{{ tag }}">{{ tag | capitalize }}</span>
+      <span style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted);">{{ page.date | postDate }}</span>
+      {% if readtime %}<span style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted);">{{ readtime }} mnt baca</span>{% endif %}
+    </div>
+    <h1 class="article-title">{{ title | safe }}</h1>
+    {% if excerpt %}<p class="article-deck">{{ excerpt }}</p>{% endif %}
+  </div>
+</div>
+
+<!-- ARTICLE BODY -->
+<div class="wrap">
+  <div class="article-body">
+    {{ content | safe }}
+  </div>
+</div>
+
+<!-- BACK TO BLOG -->
+<div class="wrap" style="padding-bottom: 64px; border-top: 1px solid var(--ink); padding-top: 40px; margin-top: 0;">
+  <a href="/blog/" class="btn btn-outline">← Kembali ke Blog</a>
+</div>

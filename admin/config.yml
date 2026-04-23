@@ -1,0 +1,36 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+locale: id
+
+collections:
+  - name: "posts"
+    label: "Blog Posts"
+    folder: "posts"
+    create: true
+    slug: "{{slug}}"
+    preview_path: "blog/{{slug}}/"
+    fields:
+      - { label: "Judul", name: "title", widget: "string" }
+      - { label: "Tanggal", name: "date", widget: "datetime", date_format: "YYYY-MM-DD", time_format: false }
+      - label: "Tag / Kategori"
+        name: "tag"
+        widget: "select"
+        options:
+          - { label: "Teknis", value: "teknis" }
+          - { label: "Karir", value: "karir" }
+          - { label: "Opini", value: "opini" }
+      - label: "Bahasa"
+        name: "lang"
+        widget: "select"
+        default: "id"
+        options:
+          - { label: "Bahasa Indonesia", value: "id" }
+          - { label: "English", value: "en" }
+      - { label: "Estimasi waktu baca (menit)", name: "readtime", widget: "number", default: 5 }
+      - { label: "Excerpt (ringkasan singkat)", name: "excerpt", widget: "text", hint: "1–2 kalimat. Ini yang tampil di listing blog." }
+      - { label: "Isi artikel", name: "body", widget: "markdown" }
