@@ -985,3 +985,161 @@ strong { font-weight: 700; }
   .filter-btn { flex: 1; text-align: center; padding: 10px 10px; }
   .offering-grid { grid-template-columns: 1fr; }
 }
+
+/* ============================================================
+   YOUTUBE ALIGNMENT — embed + badge + channel card
+   ============================================================ */
+
+/* Badge "Ada video" di listing blog */
+.post-tag-video {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent-1);
+  background: transparent;
+  border: 1px solid var(--accent-1);
+  padding: 3px 8px;
+  border-radius: 2px;
+}
+
+/* YouTube embed di halaman post */
+.yt-embed-wrap {
+  margin: 0 0 0 0;
+  padding: 40px 0 0;
+}
+
+.yt-embed-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 16px;
+}
+
+.yt-embed-frame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: var(--ink);
+  border: 1px solid var(--ink);
+  overflow: hidden;
+}
+
+.yt-embed-frame iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* YouTube channel card di homepage */
+.yt-channel-card {
+  border: 1px solid var(--ink);
+  background: var(--paper-warm);
+  padding: 36px 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.yt-channel-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.yt-channel-icon {
+  width: 52px;
+  height: 52px;
+  background: var(--ink);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.yt-channel-icon svg path { fill: var(--accent-1); }
+
+.yt-channel-name {
+  font-family: 'Fraunces', serif;
+  font-weight: 800;
+  font-size: 22px;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+  margin-bottom: 8px;
+}
+
+.yt-channel-desc {
+  font-size: 14px;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.yt-series-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  border-left: 1px solid var(--ink);
+}
+
+.yt-series-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 18px 24px;
+  border-bottom: 1px solid rgba(26,26,26,0.12);
+  transition: background 0.15s ease;
+}
+
+.yt-series-item:last-child { border-bottom: none; }
+
+.yt-series-item:hover { background: var(--paper); }
+
+.yt-series-num {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--accent-1);
+  letter-spacing: 0.08em;
+  padding-top: 3px;
+  flex-shrink: 0;
+}
+
+.yt-series-title {
+  font-family: 'Fraunces', serif;
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--ink);
+  margin-bottom: 3px;
+}
+
+.yt-series-sub {
+  font-size: 12px;
+  color: var(--muted);
+  line-height: 1.4;
+}
+
+@media (max-width: 720px) {
+  .yt-channel-card {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    padding: 28px 24px;
+  }
+  .yt-series-list {
+    border-left: none;
+    border-top: 1px solid var(--ink);
+  }
+  .yt-series-item { padding: 16px 0; }
+}

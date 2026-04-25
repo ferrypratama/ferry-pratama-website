@@ -89,7 +89,10 @@ permalink: /
     <div class="posts-grid">
       {% for post in collections.posts | slice(0, 4) %}
       <a href="{{ post.url }}" class="post-card" data-tag="{{ post.data.tag }}">
-        <span class="post-tag tag-{{ post.data.tag }}">{{ post.data.tag | capitalize }}</span>
+        <div style="display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
+          <span class="post-tag tag-{{ post.data.tag }}">{{ post.data.tag | capitalize }}</span>
+          {% if post.data.youtube_url %}<span class="post-tag-video">▶ Ada video</span>{% endif %}
+        </div>
         <div class="post-title">{{ post.data.title | safe }}</div>
         <p class="post-excerpt">{{ post.data.excerpt }}</p>
         <div class="post-meta">
@@ -98,6 +101,52 @@ permalink: /
         </div>
       </a>
       {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div style="display:flex; justify-content:space-between; align-items:flex-end; margin-bottom:28px; flex-wrap:wrap; gap:16px;">
+      <div>
+        <div class="eyebrow">YouTube</div>
+        <h2 class="section-title" style="margin-bottom:0;">Lebih suka <em class="accent">nonton</em> daripada baca?</h2>
+      </div>
+      <a href="https://youtube.com/@ferrypratama" target="_blank" rel="noopener" class="btn btn-outline">Ke Channel YouTube →</a>
+    </div>
+    <div class="yt-channel-card">
+      <div class="yt-channel-info">
+        <div class="yt-channel-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="var(--accent-1)"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+        </div>
+        <div>
+          <div class="yt-channel-name">Ferry Pratama</div>
+          <div class="yt-channel-desc">Tutorial networking, troubleshooting dari lapangan, dan insight karir IT — dalam format video yang bisa kamu tonton kapan saja.</div>
+        </div>
+      </div>
+      <div class="yt-series-list">
+        <div class="yt-series-item">
+          <div class="yt-series-num">01</div>
+          <div>
+            <div class="yt-series-title">Seri CCNA Santai</div>
+            <div class="yt-series-sub">Dari zero sampai siap ujian, episode per episode</div>
+          </div>
+        </div>
+        <div class="yt-series-item">
+          <div class="yt-series-num">02</div>
+          <div>
+            <div class="yt-series-title">Troubleshooting Diary</div>
+            <div class="yt-series-sub">Problem nyata dari lapangan + cara ngatasinya</div>
+          </div>
+        </div>
+        <div class="yt-series-item">
+          <div class="yt-series-num">03</div>
+          <div>
+            <div class="yt-series-title">Karir IT Series</div>
+            <div class="yt-series-sub">Roadmap, sertifikasi, dan hal yang gak diajarkan bootcamp</div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>

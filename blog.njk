@@ -30,7 +30,10 @@ permalink: /blog/
     <div class="posts-grid" id="postsGrid">
       {% for post in collections.posts %}
       <a href="{{ post.url }}" class="post-card" data-tag="{{ post.data.tag }}">
-        <span class="post-tag tag-{{ post.data.tag }}">{{ post.data.tag | capitalize }}</span>
+        <div style="display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
+          <span class="post-tag tag-{{ post.data.tag }}">{{ post.data.tag | capitalize }}</span>
+          {% if post.data.youtube_url %}<span class="post-tag-video">▶ Ada video</span>{% endif %}
+        </div>
         <div class="post-title">{{ post.data.title | safe }}</div>
         <p class="post-excerpt">{{ post.data.excerpt }}</p>
         <div class="post-meta">

@@ -33,4 +33,5 @@ collections:
           - { label: "English", value: "en" }
       - { label: "Estimasi waktu baca (menit)", name: "readtime", widget: "number", default: 5 }
       - { label: "Excerpt (ringkasan singkat)", name: "excerpt", widget: "text", hint: "1–2 kalimat. Ini yang tampil di listing blog." }
+      - { label: "Link Video YouTube (opsional)", name: "youtube_url", widget: "string", required: false, hint: "Paste URL YouTube kalau artikel ini punya versi video. Contoh: https://www.youtube.com/watch?v=xxxxx" }
       - { label: "Isi artikel", name: "body", widget: "markdown" }
